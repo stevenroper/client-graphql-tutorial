@@ -1253,6 +1253,13 @@ apollo-client@^2.4.13:
     tslib "^1.9.3"
     zen-observable "^0.8.0"
 
+apollo-link-context@^1.0.14:
+  version "1.0.14"
+  resolved "https://registry.npmjs.org/apollo-link-context/-/apollo-link-context-1.0.14.tgz#6265eef49bedadddbbcff4026d04cd351094cd6c"
+  integrity sha512-l6SIN7Fwqhgg5C5eA8xSrt8gulHBmYTE3J4z5/Q2hP/8Kok0rQ/z5q3uy42/hkdYlnaktOvpz+ZIwEFzcXwujQ==
+  dependencies:
+    apollo-link "^1.2.8"
+
 apollo-link-dedup@^1.0.0:
   version "1.0.15"
   resolved "https://registry.npmjs.org/apollo-link-dedup/-/apollo-link-dedup-1.0.15.tgz#028148f1028e806a9ab2f4abf3bde9dc292565e9"
