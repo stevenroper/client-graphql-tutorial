@@ -35,7 +35,13 @@ class Link extends React.Component {
         <div className="flex items-center">
           <span className="gray">{this.props.index + 1}.</span>
           {authToken && (
-            <Mutation mutation={VOTE_MUTATION} variables={{ linkId: link.id }}>
+            <Mutation
+              mutation={VOTE_MUTATION}
+              variables={{ linkId: link.id }}
+              update={(store, { data: { vote } }) => {
+                this.props.updateStoreAfterVote(store, vote, link.id)
+              }}
+            >
               {voteMutation => (
                 <div className="ml1 gray f11" style={{ cursor: 'pointer' }} onClick={voteMutation}>
                   ▲
